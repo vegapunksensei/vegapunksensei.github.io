@@ -8,7 +8,6 @@ const video = document.getElementById("rickroll-video");
 let count = 5;
 countdownEl.textContent = count;
 
-// Start countdown
 const interval = setInterval(() => {
   count--;
   if (count > 0) {
@@ -19,14 +18,12 @@ const interval = setInterval(() => {
   }
 }, 1000);
 
-// Show bait message
 function showClickBait() {
   countdownEl.style.display = "none";
   teaserText.style.display = "none";
   clickBait.style.display = "block";
   countdownContainer.style.cursor = "pointer";
 
-  // Wait for user click
   countdownContainer.addEventListener("click", () => {
     startRickroll();
   }, { once: true });
