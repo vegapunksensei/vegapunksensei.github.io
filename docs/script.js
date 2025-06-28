@@ -5,7 +5,7 @@ const clickBait = document.getElementById("click-bait");
 const videoContainer = document.getElementById("video-container");
 const video = document.getElementById("rickroll-video");
 
-let count = 7;
+let count = 5;
 countdownEl.textContent = count;
 
 // Start countdown
