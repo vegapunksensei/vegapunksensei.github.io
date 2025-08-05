@@ -1,0 +1,82 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background: black;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+/* Centering */
+#countdown-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding: 0 5vw;
+}
+
+/* Teaser */
+#teaser-text {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  color: #ccc;
+  text-shadow: 1px 1px 3px #444;
+}
+
+/* Countdown */
+#countdown {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Click bait */
+#click-bait {
+  font-size: 1.8rem;
+  color: #ffd700;
+  text-shadow: 1px 1px 5px hotpink;
+  animation: pulse 1.2s infinite alternate;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+/* Animation */
+@keyframes pulse {
+  from {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+
+  to {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+}
+
+/* Fullscreen video */
+#video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+}
+
+#rickroll-video {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
